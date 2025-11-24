@@ -25,9 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { data: 'A DEFINIR', equipes: '3°AV TECNICO X 3° FLUXO' },
     { data: 'A DEFINIR', equipes: '1°CV REGULAR X 1°AV INTEGRAL' },
     { data: 'A DEFINIR', equipes: '3° FLUXO VESP X 3°A TEC VESP' },
-    { data: 'A DEFINIR', equipes: 'Palmeiras X Santos' },
-    { data: 'A DEFINIR', equipes: 'Palmeiras X Santos' },
-    { data: 'A DEFINIR', equipes: 'Palmeiras X Santos' },
+
   ];
 
   const barra = document.querySelector('.barra-jogos');
