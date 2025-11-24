@@ -1,0 +1,278 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="src/styles/style.css">  <!-- Importando os styles-->
+  <link rel="stylesheet" href="src/styles/header.css"> <!-- Importando os styles-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Liga Interclasse</title>
+</head>
+<body>
+
+  <header class="header">
+  <div class="container">
+    <nav id="navbar">
+            <i class="fa-solid fa-futbol" id="nav_logo"> <strong>LIGA INTERCLASSE</strong></i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a id="home">Tabela de Jogos</a>
+                </li>
+                <li class="nav-item">
+                    <a id="menu">Equipes</a>
+                </li>
+             <li class="nav-item">
+        <a id="consideracoes">Considerações</a>
+            </li>
+             </ul>
+    </nav>
+    
+    
+  </div>
+  </header>
+
+  <main class="container">
+  <section class="card">
+    <h2>LIGA INTERCLASSE</h2>
+    <p class="small">Boas Vindas ao Liga Interclasse.</p>
+    <p class="small">Este Portal foi Desenvolvido para Melhor Informação Sobre os Jogos Inter-Classe do colégio CEEAT.</p>
+  </section>
+
+  <section class="barra-jogos">
+    <div class="jogo">
+      <span class="data">12/11/2025</span>
+      <span class="equipes">Aguia - 2°A X Falcão - 2°B </span>
+    </div>
+    
+    <div class="jogo">
+      <span class="data">13/11/2025</span>
+      <span class="equipes">Cobra - 1°A X Serpente - 1°C</span>
+    </div>
+    
+    <div class="jogo">
+      <span class="data">14/11/2025</span>
+      <span class="equipes">Palmeiras X Santos</span>
+    </div>
+
+    <div class="jogo">
+      <span class="data">14/11/2025</span>
+      <span class="equipes">Palmeiras X Santos</span>
+    </div>
+    
+    <div class="jogo">
+      <span class="data">14/11/2025</span>
+      <span class="equipes">Palmeiras X Santos</span>
+    </div>   
+  </section>
+
+<section class="card-area">
+  <h3 class="title">Quadra de Jogos</h3>
+  <p class="title2">Conheça a Quadra de Jogos</p>
+  <div class="card-quadra">
+  <div class="gallery">
+  <div class="main">
+    <img id="mainImage" src="src/images/4.png" alt="">
+  </div>
+
+  <div class="thumbs">
+    <img src="src/images/1.png" onmouseenter="setImage(this)" onclick="setImage(this)">
+    <img src="src/images/2.png"onmouseenter="setImage(this)"  onclick="setImage(this)">
+    <img src="src/images/3.png"onmouseenter="setImage(this)"  onclick="setImage(this)">
+    <img src="src/images/4.png"onmouseenter="setImage(this)"  onclick="setImage(this)">
+  </div>
+  </div>
+  </div>
+</section>
+
+<script>
+function setImage(el) {
+  document.getElementById("mainImage").src = el.src;
+}
+
+  function scrollToSection(id, targetClass) {
+    document.getElementById(id).addEventListener("click", () => {
+      document.querySelector(targetClass).scrollIntoView({ behavior: "smooth" });
+    });
+  }
+  function scrollWithOffset(id, targetClass, offset) {
+    document.getElementById(id).addEventListener("click", () => {
+      const el = document.querySelector(targetClass);
+      const y = el.getBoundingClientRect().top + window.scrollY + offset;
+
+      window.scrollTo({
+        top: y,
+        behavior: "smooth"
+      });
+    });
+  }
+
+scrollWithOffset("home", ".card-area", -295);
+
+scrollToSection("consideracoes", ".card-consideracoes");
+
+scrollWithOffset("menu", ".card-container", -225);
+</script>
+
+  <section class="card-equipe">
+    <h3 class="title">3°AV TECNICO | 2025</h3>
+    <div class="card-container">
+        <div class="card">
+            <img src="src/images/goleiro1.webp" alt="ihdadf">
+          <h4>GOLEIRO</h4>
+          <P>MATEUS SILVA</P>
+        </div>
+        <div class="card">
+            <img src="src/images/man1.webp" alt="ihdadf">
+          <h4>FIXO</h4>
+          <P>RENAN</P>
+        </div>
+        <div class="card">
+            <img src="src/images/man1.webp" alt="ihdadf">
+          <h4>FIXO</h4>
+          <p>PEDRA ALVES</p>
+        </div>
+        <div class="card">
+            <img src="src/images/man1.webp" alt="ihdadf">
+          <h4>ALA</h4>
+          <P>LUCAS FREITAS</P>
+        </div>
+        <div class="card">
+            <img src="src/images/man1.webp" alt="ihdadf">
+          <h4>ALA</h4>
+          <P>SANTANA</P>
+        </div>
+        <div class="card">
+            <img src="src/images/man1.webp" alt="ihdadf">
+          <h4>PIVÔ</h4>
+          <P>ARNOLD</P>
+  </section>  
+
+  <section class="card-equipe">
+    <h3 class="title">3°V FLUXO | 2025</h3>
+    <div class="card-container">
+        <div class="card">
+            <img src="src/images/goleiro1.webp" alt="ihdadf">
+          <h4>GOLEIRO</h4>
+          <P>MATEUS PASINATO</P>
+        </div>
+        <div class="card">
+            <img src="src/images/man2.webp" alt="ihdadf">
+          <h4>FIXO</h4>
+          <P>RENAN</P>
+        </div>
+        <div class="card">
+            <img src="src/images/man2.webp" alt="ihdadf">
+          <h4>FIXO</h4>
+          <p>COSTA CURTA</p>
+        </div>
+        <div class="card">
+            <img src="src/images/man2.webp" alt="ihdadf">
+          <h4>ALA</h4>
+          <P>SERGIO ARAUJO</P>
+        </div>
+        <div class="card">
+            <img src="src/images/man2.webp" alt="ihdadf">
+          <h4>ALA</h4>
+          <P>JUNIOR PINTO</P>
+        </div>
+        <div class="card">
+            <img src="src/images/man2.webp" alt="ihdadf">
+          <h4>PIVÔ</h4>
+          <P>MAICON KUIST</P>
+  </section>  
+
+  <section class="card-equipe">
+    <h3 class="title">1°CV REGULAR | 2025</h3>
+    <div class="card-container">
+        <div class="card">
+            <img src="src/images/goleiro1.webp" alt="ihdadf">
+          <h4>GOLEIRO</h4>
+          <P>MATEUS SILVA</P>
+        </div>
+        <div class="card">
+            <img src="src/images/man3.webp" alt="ihdadf">
+          <h4>FIXO</h4>
+          <P>RENAN</P>
+        </div>
+        <div class="card">
+            <img src="src/images/man3.webp" alt="ihdadf">
+          <h4>FIXO</h4>
+          <p>PEDRA ALVES</p>
+        </div>
+        <div class="card">
+            <img src="src/images/man3.webp" alt="ihdadf">
+          <h4>ALA</h4>
+          <P>LUCAS FREITAS</P>
+        </div>
+        <div class="card">
+            <img src="src/images/man3.webp" alt="ihdadf">
+          <h4>ALA</h4>
+          <P>SANTANA</P>
+        </div>
+        <div class="card">
+            <img src="src/images/man3.webp" alt="ihdadf">
+          <h4>PIVÔ</h4>
+          <P>ARNOLD</P>
+  </section>  
+
+  <section class="card-equipe">
+    <h3 class="title">1°AV INTEGRAL | 2025</h3>
+    <div class="card-container">
+        <div class="card">
+            <img src="src/images/goleiro1.webp" alt="ihdadf">
+          <h4>GOLEIRO</h4>
+          <P>MATEUS PASINATO</P>
+        </div>
+        <div class="card">
+            <img src="src/images/man4.webp" alt="ihdadf">
+          <h4>FIXO</h4>
+          <P>RENAN</P>
+        </div>
+        <div class="card">
+            <img src="src/images/man4.webp" alt="ihdadf">
+          <h4>FIXO</h4>
+          <p>COSTA CURTA</p>
+        </div>
+        <div class="card">
+            <img src="src/images/man4.webp" alt="ihdadf">
+          <h4>ALA</h4>
+          <P>SERGIO ARAUJO</P>
+        </div>
+        <div class="card">
+            <img src="src/images/man4.webp" alt="ihdadf">
+          <h4>ALA</h4>
+          <P>JUNIOR PINTO</P>
+        </div>
+        <div class="card">
+            <img src="src/images/man4.webp" alt="ihdadf">
+          <h4>PIVÔ</h4>
+          <P>MAICON KUIST</P>
+  </section>  
+
+  <div class="card-consideracoes">
+    <h1 class="consideracoesh1">Agradecimentos</h1>
+    <p class="consideracoesp1">Agradecemos a todos os professores, a todos que contribuiram de alguma forma. Sua confiança em mim nos deu forças para seguir em frente.</p>
+  </div>
+  
+  </div>  
+</main>
+
+
+<div class="silva">
+    <div class="social-container">
+      <div class="social-icon facebook">
+        <a href="https://wa.me/+5571933663083" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <div class="social-icon instagram">
+        <a href="https://www.instagram.com/colegio.ceaat/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <p class="dr">© Todos os Direitos Reservados / 2025 | TURMA 3° A TEC V</p>
+  </div>
+
+
+<script src="src/javascript/script.js"> </script>
+</body>
+</html>
