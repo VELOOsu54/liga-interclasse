@@ -177,7 +177,8 @@ button {
   background: #fff;
   color: #fff;
   display: flex;
-  overflow-x: auto;
+  flex-wrap: wrap;
+  overflow-x: hide;
   gap: 16px;
   padding: 18px 18px;
   white-space: nowrap;
@@ -188,6 +189,7 @@ button {
   margin-bottom: 18px;
   justify-content: center;   /* horizontal */
   align-items: center;       /*  vertical  */
+  overflow: hidden;
 }
 
 .re-address a {
@@ -195,8 +197,10 @@ button {
 }
 
 .re-address h1 {
-    color: #000;
+    color: #115c28;
     padding: 15px;
+    overflow: hidden;
+    font-size: 30px;
 }
 
 .card {
