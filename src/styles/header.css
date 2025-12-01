@@ -9,6 +9,12 @@ header {
     box-sizing: border-box;
 }
 
+.ceaatlogo {
+    display: flex;
+    justify-content: center; /* centro horizontal */
+    align-items: center;     /* centro vertical */
+}
+
 #navbar {
     width: 100%;          /* barra completa */
     display: flex;
