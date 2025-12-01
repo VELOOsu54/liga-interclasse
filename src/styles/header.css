@@ -22,7 +22,7 @@ header {
 }
 
 #nav_list {
-      cursor: pointer;
+    cursor: pointer;
     display: flex;
     list-style: none;
     gap: 48px;

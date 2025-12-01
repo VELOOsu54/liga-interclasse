@@ -1,13 +1,14 @@
 ﻿<!doctype html>
 <html lang="pt-br">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="src/styles/style.css">  <!-- Importando os styles-->
   <link rel="stylesheet" href="src/styles/header.css"> <!-- Importando os styles-->
-
+  <link rel="shortcut icon" type="imagex/png" href="src/images/ceaat.png">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <title>Liga Interclasse</title>
+  <title>Liga Interclasse - CEAAT</title>
 </head>
 <body>
 
@@ -18,14 +19,14 @@
 
             <ul id="nav_list">
                 <li class="nav-item active">
-                    <a id="home">Tabela de Jogos</a>
+                    <a id="home">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a id="menu">Equipes</a>
+                    <a id="menu" href="equipes.html" target="">Equipes</a>
                 </li>
-             <li class="nav-item">
-        <a id="consideracoes">Considerações</a>
-            </li>
+                <li class="nav-item">
+                    <a id="consideracoes">Considerações</a>
+                </li>
              </ul>
     </nav>
     
@@ -34,37 +35,31 @@
   </header>
 
   <main class="container">
+
+  <div class="re-address">
+    <a href="equipes.html" target=""> <h1>EQUIPES</h1> </a>
+    <a href="equipes.html" target=""> <h1>EQUIPES</h1> </a>
+    <a href="equipes.html" target=""> <h1>EQUIPES</h1> </a>
+  </div>    
   <section class="card">
-    <h2>LIGA INTERCLASSE</h2>
+    <h2>O QUE INTERCLASSE</h2>
     <p class="small">Boas Vindas ao Liga Interclasse.</p>
-    <p class="small">Este Portal foi Desenvolvido para Melhor Informação Sobre os Jogos Inter-Classe do colégio CEEAT.</p>
+    <p class="small">O interclasse de futebol é um torneio realizado dentro da escola em que turmas competem entre si. 
+      Jogado em formato de futsal, com partidas curtas e regras simples. 
+      <br>O interclasse de futebol é aquele momento especial do ano em que a escola inteira vibra.
+       Cada turma monta seu time, cria torcida, inventa gritos de guerra e entra em quadra para ver quem leva
+        o título — e, claro, a fama dentro da escola.</p>
   </section>
 
-  <section class="barra-jogos">
-    <div class="jogo">
-      <span class="data">12/11/2025</span>
-      <span class="equipes">Aguia - 2°A X Falcão - 2°B </span>
+  <section class="card">
+    <div class="card">
+    <div class="card-imgtxt">
+      <img class="imgtxt" src="src/images/high.jpg">
     </div>
-    
-    <div class="jogo">
-      <span class="data">13/11/2025</span>
-      <span class="equipes">Cobra - 1°A X Serpente - 1°C</span>
     </div>
-    
-    <div class="jogo">
-      <span class="data">14/11/2025</span>
-      <span class="equipes">Palmeiras X Santos</span>
-    </div>
-
-    <div class="jogo">
-      <span class="data">14/11/2025</span>
-      <span class="equipes">Palmeiras X Santos</span>
-    </div>
-    
-    <div class="jogo">
-      <span class="data">14/11/2025</span>
-      <span class="equipes">Palmeiras X Santos</span>
-    </div>   
+    <p class="small">Os Jogos Interclasse são um dos eventos mais significativos do ambiente escolar, pois vão muito além da simples competição esportiva. Eles representam um momento de integração, aprendizado e desenvolvimento de habilidades que contribuem para a formação integral dos estudantes. Em um contexto em que muitos jovens passam grande parte do tempo em atividades exclusivamente acadêmicas, o interclasse surge como uma oportunidade de aliar esporte, convivência e educação.</p>
+    <hr>
+    <p class="small">Em síntese, os Jogos Interclasse têm papel fundamental no desenvolvimento dos estudantes, pois promovem não apenas atividade física, mas também valores humanos, integração social e bem-estar emocional. Quando bem organizados e inclusivos, tornam-se uma ferramenta pedagógica poderosa, capaz de transformar o ambiente escolar e enriquecer a formação de cada aluno. Portanto, investir nesse tipo de evento é investir em educação de qualidade e em uma convivência escolar mais positiva e significativa.</p>
   </section>
 
 <section class="card-area">
@@ -112,144 +107,9 @@ scrollWithOffset("home", ".card-area", -295);
 
 scrollToSection("consideracoes", ".card-consideracoes");
 
-scrollWithOffset("menu", ".card-container", -225);
 </script>
 
-  <section class="card-equipe">
-    <h3 class="title">3°AV TECNICO | 2025</h3>
-    <div class="card-container">
-        <div class="card">
-            <img src="src/images/goleiro1.webp" alt="ihdadf">
-          <h4>GOLEIRO</h4>
-          <P>MATEUS SILVA</P>
-        </div>
-        <div class="card">
-            <img src="src/images/man1.webp" alt="ihdadf">
-          <h4>FIXO</h4>
-          <P>RENAN</P>
-        </div>
-        <div class="card">
-            <img src="src/images/man1.webp" alt="ihdadf">
-          <h4>FIXO</h4>
-          <p>PEDRA ALVES</p>
-        </div>
-        <div class="card">
-            <img src="src/images/man1.webp" alt="ihdadf">
-          <h4>ALA</h4>
-          <P>LUCAS FREITAS</P>
-        </div>
-        <div class="card">
-            <img src="src/images/man1.webp" alt="ihdadf">
-          <h4>ALA</h4>
-          <P>SANTANA</P>
-        </div>
-        <div class="card">
-            <img src="src/images/man1.webp" alt="ihdadf">
-          <h4>PIVÔ</h4>
-          <P>ARNOLD</P>
-  </section>  
 
-  <section class="card-equipe">
-    <h3 class="title">3°V FLUXO | 2025</h3>
-    <div class="card-container">
-        <div class="card">
-            <img src="src/images/goleiro1.webp" alt="ihdadf">
-          <h4>GOLEIRO</h4>
-          <P>MATEUS PASINATO</P>
-        </div>
-        <div class="card">
-            <img src="src/images/man2.webp" alt="ihdadf">
-          <h4>FIXO</h4>
-          <P>RENAN</P>
-        </div>
-        <div class="card">
-            <img src="src/images/man2.webp" alt="ihdadf">
-          <h4>FIXO</h4>
-          <p>COSTA CURTA</p>
-        </div>
-        <div class="card">
-            <img src="src/images/man2.webp" alt="ihdadf">
-          <h4>ALA</h4>
-          <P>SERGIO ARAUJO</P>
-        </div>
-        <div class="card">
-            <img src="src/images/man2.webp" alt="ihdadf">
-          <h4>ALA</h4>
-          <P>JUNIOR PINTO</P>
-        </div>
-        <div class="card">
-            <img src="src/images/man2.webp" alt="ihdadf">
-          <h4>PIVÔ</h4>
-          <P>MAICON KUIST</P>
-  </section>  
-
-  <section class="card-equipe">
-    <h3 class="title">1°CV REGULAR | 2025</h3>
-    <div class="card-container">
-        <div class="card">
-            <img src="src/images/goleiro1.webp" alt="ihdadf">
-          <h4>GOLEIRO</h4>
-          <P>MATEUS SILVA</P>
-        </div>
-        <div class="card">
-            <img src="src/images/man3.webp" alt="ihdadf">
-          <h4>FIXO</h4>
-          <P>RENAN</P>
-        </div>
-        <div class="card">
-            <img src="src/images/man3.webp" alt="ihdadf">
-          <h4>FIXO</h4>
-          <p>PEDRA ALVES</p>
-        </div>
-        <div class="card">
-            <img src="src/images/man3.webp" alt="ihdadf">
-          <h4>ALA</h4>
-          <P>LUCAS FREITAS</P>
-        </div>
-        <div class="card">
-            <img src="src/images/man3.webp" alt="ihdadf">
-          <h4>ALA</h4>
-          <P>SANTANA</P>
-        </div>
-        <div class="card">
-            <img src="src/images/man3.webp" alt="ihdadf">
-          <h4>PIVÔ</h4>
-          <P>ARNOLD</P>
-  </section>  
-
-  <section class="card-equipe">
-    <h3 class="title">1°AV INTEGRAL | 2025</h3>
-    <div class="card-container">
-        <div class="card">
-            <img src="src/images/goleiro1.webp" alt="ihdadf">
-          <h4>GOLEIRO</h4>
-          <P>MATEUS PASINATO</P>
-        </div>
-        <div class="card">
-            <img src="src/images/man4.webp" alt="ihdadf">
-          <h4>FIXO</h4>
-          <P>RENAN</P>
-        </div>
-        <div class="card">
-            <img src="src/images/man4.webp" alt="ihdadf">
-          <h4>FIXO</h4>
-          <p>COSTA CURTA</p>
-        </div>
-        <div class="card">
-            <img src="src/images/man4.webp" alt="ihdadf">
-          <h4>ALA</h4>
-          <P>SERGIO ARAUJO</P>
-        </div>
-        <div class="card">
-            <img src="src/images/man4.webp" alt="ihdadf">
-          <h4>ALA</h4>
-          <P>JUNIOR PINTO</P>
-        </div>
-        <div class="card">
-            <img src="src/images/man4.webp" alt="ihdadf">
-          <h4>PIVÔ</h4>
-          <P>MAICON KUIST</P>
-  </section>  
 
   <div class="card-consideracoes">
     <h1 class="consideracoesh1">Agradecimentos</h1>

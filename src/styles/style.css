@@ -6,7 +6,7 @@
 }
 html {
     font-family:"Oswald", sans-serif;
-    background:#040404;
+    background:#e6eee9;
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -41,8 +41,8 @@ html {
   gap: 16px;
   padding: 18px 18px;
   white-space: nowrap;
-  border-top: 3px solid #44914D;
-  border-bottom: 3px solid #44914D;
+  border-top: 3px solid #79ae8c;
+  border-bottom: 3px solid #79ae8c;
   border-radius: 8px;
   scroll-behavior: smooth;
   margin-bottom: 18px;
@@ -101,8 +101,8 @@ button {
 }
 
 .small {
-    font-size:13px;
-    color:#666
+    font-size:18px;
+    color:#1a1616
 }
 
 .ttr {
@@ -112,6 +112,14 @@ button {
 }
 
 /* //editn */
+.card-jogador {
+ background: #fff;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.04);
+  margin-bottom: 18px;
+}
+
 .card-area{
   display: flex;
   flex-direction: column;
@@ -165,12 +173,60 @@ button {
   color:#666
 }
 
+.re-address {
+  background: #fff;
+  color: #fff;
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 18px 18px;
+  white-space: nowrap;
+  border-top: 3px solid #79ae8c;
+  border-bottom: 3px solid #79ae8c;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  margin-bottom: 18px;
+  justify-content: center;   /* horizontal */
+  align-items: center;       /*  vertical  */
+}
+
+.re-address a {
+  text-decoration: none;
+}
+
+.re-address h1 {
+    color: #000;
+    padding: 15px;
+}
+
 .card {
  background: #fff;
   padding: 14px;
   border-radius: 8px;
   box-shadow:0 6px 18px rgba(0,0,0,0.04);
   margin-bottom: 18px;
+}
+
+.card-imgtxt {
+ background: #fff;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 480px;
+}
+
+.imgtxt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 480px;
 }
 
 .card-consideracoes {
@@ -304,12 +360,12 @@ header {
   text-align: center;
   margin-top: 0;
   font-size: 14px;
-  color: #aaa;
+  color: #000000;
 }
 
 .social-icon i {
   font-size: 1.8rem;
-  color: #aaa;
+  color: #000000;
   transition: 0.4s ease;
 }
 
